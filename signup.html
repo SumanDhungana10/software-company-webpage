@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Login Form</title>
+    <meta charset="UTF-8">
+        <meta name="description" content="Free Web tutorials">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+        <meta name="author" content="John Doe">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .form-container {
+  border: 3px solid #f1f1f1;
+  width:250px ;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 15px;
+  align-items: center;
+}
+h2 {
+  text-align: center;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  height: 30px;
+  font-size: 16px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.button{
+  align-items: center;
+  background-color: #000501;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  border-radius: 15px;
+  
+}
+
+button[type=submit]:hover {
+  opacity: 0.8;
+}
+.button-container {
+  text-align: center;
+}
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+        <h2>Sign Up</h2>
+    <form method="POST" action="signup.php">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password" required>
+        <div class="button-container">
+        <input type="submit" class="button" value="Sign Up">
+        </div>
+    </div>
+      </form>
+  </body>
+</html>
